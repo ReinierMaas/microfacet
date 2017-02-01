@@ -9,7 +9,7 @@ documentation = "https://github.com/ReinierMaas/microfacet/"
 homepage = "https://github.com/ReinierMaas/microfacet/"
 repository = "https://github.com/ReinierMaas/microfacet/"
 readme = "README.md"
-keywords = ["microfacet", "brdf", "", "", ""]
+keywords = ["microfacet", "brdf", "sample", "pdf", "surface_model"]
 categories = ["algorithms", "game-engines", "games", "rendering", "rendering::engine"]
 license = "MIT"
 
