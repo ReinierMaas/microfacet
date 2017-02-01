@@ -1,0 +1,54 @@
+[package]
+name = "microfacet"
+version = "0.1.0"
+authors = ["Reinier Maas <reiniermaas@hotmail.com>"]
+
+# METADATA
+description = "microfacet for rust"
+documentation = "https://github.com/ReinierMaas/microfacet/"
+homepage = "https://github.com/ReinierMaas/microfacet/"
+repository = "https://github.com/ReinierMaas/microfacet/"
+readme = "README.md"
+keywords = ["microfacet", "brdf", "", "", ""]
+categories = ["algorithms", "game-engines", "games", "rendering", "rendering::engine"]
+license = "MIT"
+
+# Optional specification of badges to be displayed on crates.io. The badges
+# currently available are Travis CI and Appveyor latest build status, specified
+# using the following parameters:
+# [badges]
+# Travis CI: `repository` is required. `branch` is optional; default is `master`
+# travis-ci = { repository = "...", branch = "master" }
+# Appveyor: `repository` is required. `branch` is optional; default is `master`
+# `service` is optional; valid values are `github` (default), `bitbucket`, and
+# `gitlab`.
+# appveyor = { repository = "...", branch = "master", service = "github" }
+
+# PROFILES
+# The development profile, used for `cargo build | run`.
+[profile.dev]
+opt-level = 0
+debug = true
+debug-assertions = true
+
+# The release profile, used for `cargo build | run --release`.
+[profile.release]
+opt-level = 3
+lto = true
+
+# The testing profile, used for `cargo test`.
+[profile.test]
+opt-level = 0
+debug = true
+debug-assertions = true
+
+# The benchmarking profile, used for `cargo bench`.
+[profile.bench]
+opt-level = 3
+lto = true
+
+[dependencies]
+cgmath = "0.12.0"
+rand = "0.3.15"
+
+[dev-dependencies]
